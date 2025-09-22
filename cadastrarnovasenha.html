@@ -37,7 +37,7 @@
         <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
         <link rel="stylesheet" href="/css/estilo.css">
-        <title>Quitanda Online :: Página Principal</title>
+        <title>Quitanda Online :: Cadastro de Nova Senha</title>
     </head>
     <body class="d-flex flex-column min-vh-100">
         <div class="d-flex flex-column wrapper">
@@ -84,41 +84,25 @@
                     </div>
                 </nav>
                 
-                <div class="container">
-
-                    <div id="carouselMain" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="0" class="active"></button>
-                            <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="1"></button>
-                            <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                            <img src="/img/slides/slide01.jpg" class="d-block w-100" alt="">
-                            </div>
-                            <div class="carousel-item">
-                            <img src="/img/slides/slide01.jpg" class="d-block w-100" alt="">
-                            </div>
-                            <div class="carousel-item">
-                            <img src="/img/slides/slide01.jpg" class="d-block w-100" alt="">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Anterior</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Próximo</span>
-                        </button>
-                        </div>
-
-                </div>
-
                 <main class="flex-fill">
                     <div class="container">
 
-                        
+                        <form class="col-sm-10 col-md-8 col-lg-6">
+                                <h1>Redefina sua senha abaixo!</h1>
+
+                                <div class="form-floating mb-3">
+                                    <input type="password" id="txtSenha" class="form-control" placeholder=" " autofocus>
+                                    <label for="txtSenha">Digite sua nova senha</label>
+                                 </div>
+
+                                 <div class="form-floating mb-3">
+                                    <input type="password" id="txtSenha" class="form-control" placeholder=" " autofocus>
+                                    <label for="txtSenha">Confirme sua nova senha</label>
+                                 </div>
+
+                                <button type="button" onclick="window.location.href='/confirmcadastrosenha.html'" class="btn btn-lg btn-danger">Alterar senha</button>
+
+                            </form> 
 
                     </div>
                 </main>

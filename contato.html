@@ -37,7 +37,7 @@
         <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
         <link rel="stylesheet" href="/css/estilo.css">
-        <title>Quitanda Online :: Página Principal</title>
+        <title>Quitanda Online :: Contato</title>
     </head>
     <body class="d-flex flex-column min-vh-100">
         <div class="d-flex flex-column wrapper">
@@ -84,41 +84,39 @@
                     </div>
                 </nav>
                 
-                <div class="container">
-
-                    <div id="carouselMain" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="0" class="active"></button>
-                            <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="1"></button>
-                            <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                            <img src="/img/slides/slide01.jpg" class="d-block w-100" alt="">
-                            </div>
-                            <div class="carousel-item">
-                            <img src="/img/slides/slide01.jpg" class="d-block w-100" alt="">
-                            </div>
-                            <div class="carousel-item">
-                            <img src="/img/slides/slide01.jpg" class="d-block w-100" alt="">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Anterior</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Próximo</span>
-                        </button>
-                        </div>
-
-                </div>
-
                 <main class="flex-fill">
                     <div class="container">
 
-                        
+                        <form class="col-sm-10 col-md-8 col-lg-6">
+                                <h1>Entre em Contato</h1>
+
+                                <div class="form-floating mb-3">
+                                    <input type="text" id="txtNomeCompleto" class="form-control" placeholder=" " autofocus>
+                                    <label for="txtNomeCompleto">Nome Completo</label>
+                                 </div>
+
+                                 <div class="form-floating mb-3">
+                                    <input type="email" id="txtEmail" class="form-control" placeholder=" " autofocus>
+                                    <label for="txtEmail">E-mail</label>
+                                 </div>
+
+                                 <div class="form-floating mb-3">
+                                    <textarea id="txtMensagem" class="form-control" placeholder=" " style="height: 200px;"></textarea>
+                                    <label for="txtMensagem">Mensagem</label>
+                                 </div>
+
+                                <button type="button" onclick="window.location.href='/confirmcontato.html'" class="btn btn-lg btn-danger">Enviar Mensagem</button>
+
+                                 <p class="mt-3">
+                                    Faremos o possível para responder o seu contato em até 2 dias úteis.
+                                 </p>
+
+                                 <p class="mt-3">
+                                    Atenciosamente, <br>
+                                    Equipe Quitanda Online
+                                 </p>
+
+                            </form>
 
                     </div>
                 </main>
