@@ -37,9 +37,8 @@
         <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
         <link rel="stylesheet" href="/css/estilo.css">
-        <title>Quitanda Online :: Fechamento da Compra</title>
+        <title>Quitanda Online :: Fechamento Pedido</title>
     </head>
-
     <body class="d-flex flex-column min-vh-100">
         <div class="d-flex flex-column wrapper">
             <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm mb-3">
@@ -72,10 +71,6 @@
                                 <li class="nav-item">
                                     <a class="nav-link text-white" href="/login.html">Sair</a>
                                 </li>
-                                <li class="nav-item">
-                                    <span class="badge rounded-pill bg-light text-danger position-absolute ms-4 mt-0" title="5 produto(s) no carrinho">
-                                        <small>5</small>
-                                    </span>
                                     <a class="nav-link text-white" href="/carrinho.html">
                                         <i class="bi-cart" style="font-size: 24px; line-height: 24px;"></i>
                                     </a>
@@ -86,61 +81,20 @@
                 </nav>
                 
                 <main class="flex-fill">
-                    <div class="container">
-                        <h1>Selecione o endereço de Entrega</h1>
-                        <h3 class="mb-4">
-                            Selecione o endereço de entrega e clique em <b>Continuar</b> para prosseguir para a <b>seleção da forma de pagamento</b>
-                        </h3>
-                        <div class="d-flex justify-content-around flex-wrap border rounded-top pt-4 px-3">
-                            <div class="mb-4 mx-2 flex-even">
-                                <input type="radio" class="btn-check" name="endereco" autocomplete="off" id="end1">
-
-                                <label class="btn btn-outline-danger p-4 h-100 w-100" for="end1">
-                                    <h3>
-                                        <b class="text-dark">Minha Casa</b><br>
-                                        <hr>
-                                        <b>Kayke Vêncio</b><br>
-                                        Rua Barão Vermelho, 003 <br>
-                                        Goiânia - GO<br>
-                                        CEP: 74000-000
-                                    </h3>
-                                </label>
-                            </div>
-                            <div class="mb-4 mx-2 flex-even">
-                                <input type="radio" class="btn-check" name="endereco" autocomplete="off" id="end2">
-
-                                <label class="btn btn-outline-danger p-4 h-100 w-100" for="end2">
-                                    <h3>
-                                        <b class="text-dark">Trabalho</b><br>
-                                        <hr>
-                                        <b>Kayke Vêncio</b><br>
-                                        Rua Barão Vermelho, 003 <br>
-                                        Goiânia - GO<br>
-                                        CEP: 74000-000
-                                    </h3>
-                                </label>
-                            </div>
-                            <div class="mb-4 mx-2 flex-even">
-                                <input type="radio" class="btn-check" name="endereco" autocomplete="off" id="end3">
-
-                                <label class="btn btn-outline-danger p-4 h-100 w-100" for="end3">
-                                    <h3>
-                                        <b class="text-dark">Chácara</b><br>
-                                        <hr>
-                                        <b>Kayke Vêncio</b><br>
-                                        Rua Barão Vermelho, 003 <br>
-                                        Goiânia - GO<br>
-                                        CEP: 74000-000
-                                    </h3>
-                                </label>
-                            </div>
-                        </div>
-                            <div class="text-end border border-top-0 rounded-bottom p-3 pb-0">
-                                <a href="/fechamento_itens.html" class="btn btn-outline-success btn-lg mb-3">
-                                    Voltar aos Itens
-                                </a>
-                                <a href="/fechamento_pagamento.html" class="btn btn-danger btn-lg ms-2 mb-3"> Continuar</a>
-                            </div>
+                    <div class="container text-center">
+                        <h1>Obrigado!</h1>
+                        <hr>
+                        <h3>Anote o número de seu medido:</h3>
+                        <h2 class="text-danger"><b>0056241</b></h2>
+                        <p>Em até 2 horas, seu pedudido será entregue. Qualquer dúvida sobre este pedido, entre em contato conosco e informe o número do pedido para que possamos te ajudar.</p>
+                        <p>Tenha um ótimo dia!</p>
+                        <p>
+                            Atenciosamente,<br>
+                            Equipe Quitanda Online 
+                        </p>
+                        <p>
+                            <a href="/index.html" class="btn btn-danger btn-lg">Voltar à Página Principal</a>
+                        </p>
                     </div>
                 </main>
 
