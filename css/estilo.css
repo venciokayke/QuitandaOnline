@@ -1,11 +1,14 @@
+/* Define largura mínima para o body, garantindo boa visualização em dispositivos móveis */
 body {
-    min-width: 372px;  /* Largura mínima necessaria para dispositivos móveis na vertical */
+    min-width: 372px;  /* Largura mínima necessária para dispositivos móveis na vertical */
 }
 
+/* Faz o wrapper ocupar no mínimo toda a altura da tela (útil para rodapé fixo) */
 .wrapper {
     min-height: 100vh;
 }
 
+/* Limita parágrafos com a classe truncar-3l a 3 linhas, mostrando reticências se passar disso */
 p.truncar-3l {
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -14,8 +17,41 @@ p.truncar-3l {
     text-overflow: ellipsis;
 }
 
+/* Adiciona margem superior em telas pequenas para elementos com a classe mt-xs-3 */
 @media screen and (max-width: 469px) {
     .mt-xs-3 {
         margin-top: 1rem;
     }
+}
+
+/* Personaliza o botão radio outline-danger para ficar vermelho ao passar o mouse, focar ou selecionar */
+.btn-outline-danger:hover, .btn-outline-danger:focus, .btn-check:focus + .btn-outline-danger {
+    background-color: #dc3545 !important;
+    color: #fff !important;
+    border-color: #dc3545 !important;
+}
+
+/* Ao passar o mouse no label, muda a cor do texto com classe text-dark para branco, com transição suave */
+label:hover .text-dark{
+    transition: color 0.2s ease;
+    color: white !important;
+}
+
+/* (Duplicado) Transição suave para cor do texto ao passar o mouse no label */
+label:hover .text-dark{
+    transition: color 0.2s ease;
+}
+
+/* Muda a cor do texto com classe text-dark para branco quando o botão radio está selecionado, ativo ou em hover */
+.btn-check:checked+.btn-outline-danger .text-dark,
+.btn-check:active+.btn-outline-danger .text-dark,
+.btn-check:hover+.btn-outline-danger .text-dark{
+    transition: color 0.2s ease;
+    color: white !important;
+}
+
+/* Faz elementos com a classe flex-even ocuparem espaço igual em um flex container, com largura mínima de 300px */
+.flex-even{
+    flex: 1;
+    min-width: 300px;
 }
