@@ -55,3 +55,12 @@ label:hover .text-dark{
     flex: 1;
     min-width: 300px;
 }
+
+.accordion-button:not(.collapsed){
+    color: white;
+    background-color: #dc3545;
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: invert(1);
+}

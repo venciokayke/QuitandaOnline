@@ -37,7 +37,7 @@
         <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
         <link rel="stylesheet" href="/css/estilo.css">
-        <title>Quitanda Online :: Cadastro de Nova Senha</title>
+        <title>Quitanda Online :: Página Principal :: Detalhes do Produto "Banana Prata"</title>
     </head>
     <body class="d-flex flex-column min-vh-100">
         <div class="d-flex flex-column wrapper">
@@ -85,30 +85,48 @@
                 </nav>
                 <main class="flex-fill">
                     <div class="container">
-                        <form class="col-sm-10 col-md-8 col-lg-6">
-                            <h1>Redefina sua senha abaixo!</h1>
-                            <div class="form-floating mb-3">
-                                <input
-                                    type="password"
-                                    id="txtSenha"
-                                    class="form-control"
-                                    placeholder=" "
-                                    autofocus
-                                >
-                                <label for="txtSenha">Digite sua nova senha</label>
+                        <div class="row g3">
+                            <div class="col-12 col-sm-6">
+                                <img src="/img/produtos/000001.jpg" class="img-thumbnail" id="imgProduto">
+                                <br class="clearfix">
+                                <div class="row my-3 gx-3">
+                                    <div class="col-3">
+                                        <img src="/img/produtos/000001.jpg" class="img-thumbnail" onclick="trocarImagem(this)">
+                                    </div>
+                                    <div class="col-3">
+                                        <img src="/img/produtos/000002.jpg" class="img-thumbnail" onclick="trocarImagem(this)">
+                                    </div>
+                                    <div class="col-3">
+                                        <img src="/img/produtos/000003.jpg" class="img-thumbnail" onclick="trocarImagem(this)">
+                                    </div>
+                                    <div class="col-3">
+                                        <img src="/img/produtos/000004.jpg" class="img-thumbnail" onclick="trocarImagem(this)">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-floating mb-3">
-                                <input
-                                    type="password"
-                                    id="txtSenha"
-                                    class="form-control"
-                                    placeholder=" "
-                                    autofocus
-                                >
-                                <label for="txtSenha">Confirme sua nova senha</label>
+                            <div class="col-12 col-sm-6 my-3">
+                                <h1>Banana Prata — doce, macia e versátil</h1>
+                                <p>
+                                    <strong>Breve resumo:</strong>
+                                    Banana Prata de sabor suave e doce, polpa macia e textura firme — ideal para consumo in natura e uso culinário.
+                                </p>
+                                <h3>Informação nutricional aproximada (por 100 g)</h3>
+                                <ul>
+                                    <li>Calorias: ~89 kcal</li>
+                                    <li>Carboidratos: ~23 g</li>
+                                    <li>Fibras: ~2,6 g</li>
+                                    <li>Potássio: ~358 mg</li>
+                                </ul>
+                                <button class="btn btn-lg btn-danger mb-3 mb-xl-0 me-2">
+                                    <i class="bi-cart"></i>
+                                    Adicionar ao Carrinho
+                                </button>
+                                <button class="btn btn-lg btn-outline-danger">
+                                    <i class="bi-heart"></i>
+                                    Adicionar aos Favoritos
+                                </button>
                             </div>
-                            <button type="button" onclick="window.location.href='/confirmcadastrosenha.html'" class="btn btn-lg btn-danger">Alterar senha</button>
-                        </form>
+                        </div>
                     </div>
                 </main>
                 <footer class="border-top text-muted bg-light">
@@ -144,5 +162,11 @@
                 </footer>
             </div>
             <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+            <script>
+                function trocarImagem(el){
+                    var imgProduto = document.getElementById("imgProduto")
+                    imgProduto.src = el.src;
+                }
+            </script>
         </body>
     </html>
